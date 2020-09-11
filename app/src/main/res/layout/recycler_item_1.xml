@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="16dp">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="65dp"
+        android:layout_height="72dp"
+        android:layout_weight="15"
+        android:contentDescription="learner"
+        android:padding="8dp"
+        app:srcCompat="@drawable/learner" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="85"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Name Surname"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:id="@+id/tv_hours"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:text="hours"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:id="@+id/tv_country"
+                android:layout_gravity="end"
+                android:text="country"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
